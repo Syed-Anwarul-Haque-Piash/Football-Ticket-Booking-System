@@ -71,7 +71,7 @@ COALESCE(payment_status, 'Action Required') AS systematic_status
 FROM Bookings
 WHERE payment_status IS NULL;
 
-- QUERY 4 
+--QUERY 4 
 
 
 SELECT b.booking_id,u.full_name,m.fixture,b.total_cost
@@ -110,6 +110,3 @@ SELECT match_id,fixture,base_ticket_price
 FROM Matches
 ORDER BY base_ticket_price DESC
 LIMIT 2 OFFSET 1;
-
-
-
