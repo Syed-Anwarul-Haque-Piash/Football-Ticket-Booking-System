@@ -18,4 +18,4 @@ This project implements a **Football Ticket Booking System Database** designed t
 
 
 ### **Entity Relationship Diagram (ERD)**
-https://drive.google.com/file/d/1uObmDhlYJLUcKTj6_iRi4WjZEfGU6XpW/view?usp=sharing
+https://drive.google.com/file/d/1uObmDhlYJLUcKTj6_iRi4WjZEfGU6XpW/view
