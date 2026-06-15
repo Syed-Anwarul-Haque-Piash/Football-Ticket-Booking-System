@@ -1,5 +1,9 @@
+DROP TABLE IF EXISTS Bookings;
+DROP TABLE IF EXISTS Matches;
+DROP TABLE IF EXISTS Users;
+
 CREATE TABLE Users (
-    user_id INT PRIMARY KEY,
+    user_id serial PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     role VARCHAR(50) NOT NULL,
@@ -7,7 +11,7 @@ CREATE TABLE Users (
 );
 
 CREATE TABLE Matches (
-    match_id INT PRIMARY KEY,
+    match_id serial PRIMARY KEY,
     fixture VARCHAR(100) NOT NULL,
     tournament_category VARCHAR(50) NOT NULL,
     base_ticket_price DECIMAL(10, 2) NOT NULL,
@@ -15,7 +19,7 @@ CREATE TABLE Matches (
 );
 
 CREATE TABLE Bookings (
-    booking_id INT PRIMARY KEY,
+    booking_id serial PRIMARY KEY,
     user_id INT NOT NULL,
     match_id INT NOT NULL,
     seat_number VARCHAR(10),
@@ -110,3 +114,9 @@ SELECT match_id,fixture,base_ticket_price
 FROM Matches
 ORDER BY base_ticket_price DESC
 LIMIT 2 OFFSET 1;
+
+
+
+
+
+
